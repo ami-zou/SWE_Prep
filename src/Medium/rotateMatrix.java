@@ -1,14 +1,16 @@
 package Medium;
 
 public class rotateMatrix {
+	//clockwise v.s. counter clockwise: switch up/down OR switch left/right, and then symmetry
 	public void rotate(int[][] matrix) {
-        //switching i and j
+        //switching i and j /diagonally 
         for(int i = 0; i < matrix.length; i++){
         		for(int j = i; j < matrix.length; j++){ //can't start from 0 also, will result in the same 
                 swap(matrix, i , j , j, i);
             }
         }
         
+        //switching left and right
         for(int l = 0, r = matrix.length-1; l <= r; l++, r--){
             for(int j = 0; j < matrix.length; j++){
                 swap(matrix, j, l , j, r);
