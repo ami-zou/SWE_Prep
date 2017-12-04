@@ -10,7 +10,7 @@ public class CommonAncestor {
 		}
 
 		int largerValue = n1.value > n2.value ? n1.value : n2.value;
-		int smallerValue = n1.value > n2.value ? n1.value : n2.value;
+		int smallerValue = n1.value < n2.value ? n1.value : n2.value;
 
 		if (root.value >= smallerValue && root.value <= largerValue) {
 			return root;
@@ -30,7 +30,7 @@ public class CommonAncestor {
 		}
 
 		int largerValue = n1.value > n2.value ? n1.value : n2.value;
-		int smallerValue = n1.value > n2.value ? n1.value : n2.value;
+		int smallerValue = n1.value < n2.value ? n1.value : n2.value;
 
 		if (root.value >= smallerValue && root.value <= largerValue) {
 			if (root.left.value == root.value) {
