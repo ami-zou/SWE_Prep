@@ -1,4 +1,4 @@
-package Path;
+package Graph;
 
 import java.util.Iterator;
 import java.util.LinkedList;

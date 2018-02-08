@@ -1,4 +1,4 @@
-package Path;
+package Graph;
 
 import java.math.BigInteger;
 
