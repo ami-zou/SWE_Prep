@@ -21,7 +21,7 @@ public class PartitionKSubsetsWEqualSums {
         }
 
         list.add(tempList);
-        for(int i = start; i<nums.length; i ++){
+        for(int i = start; i<nums.length; i++){
             //finding subset 1
             tempList.add(nums[i]);
             //calculate sum
